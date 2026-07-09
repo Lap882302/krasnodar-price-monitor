@@ -7,7 +7,7 @@ const sourceColumns = [
   ["samokat", "Самокат"]
 ];
 
-const dataVersion = "2026-07-09T13-30-raw-first";
+const dataVersion = "2026-07-09T13-45-unit-labels";
 const minimumGeneratedAt = "2026-07-09T12:45:00+03:00";
 const dataUrls = [
   `https://raw.githubusercontent.com/Lap882302/krasnodar-price-monitor/main/docs/data/latest.json?v=${dataVersion}`,
@@ -41,7 +41,7 @@ function isFreshEnough(data) {
 
 function formatPrice(value) {
   if (value === null || value === undefined || value === "") return "—";
-  return new Intl.NumberFormat("ru-RU").format(value);
+  return `${new Intl.NumberFormat("ru-RU").format(value)} ₽/кг`;
 }
 
 function priceClass(value) {
