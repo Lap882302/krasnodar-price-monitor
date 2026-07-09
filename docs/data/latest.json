@@ -1,0 +1,171 @@
+{
+  "generatedAt": "2026-07-09T00:00:00+03:00",
+  "city": "Краснодар",
+  "address": "Краснодар, улица Красная, 156",
+  "currency": "RUB",
+  "unit": "kg",
+  "sources": [
+    "Рынок Онлайн",
+    "ВкусВилл",
+    "Пятёрочка",
+    "Азбука Вкуса",
+    "Яндекс Лавка",
+    "Самокат"
+  ],
+  "rows": [
+    {
+      "type": "Помидор",
+      "variant": "Красный / обычный",
+      "rynokOnline": 200,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Демо-данные из первичного ручного сбора; конкуренты кроме ВкусВилла ещё не собраны автоматикой."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Розовый Дагестан",
+      "rynokOnline": 200,
+      "vkusvill": 375,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": ""
+    },
+    {
+      "type": "Помидор",
+      "variant": "Черри",
+      "rynokOnline": 650,
+      "vkusvill": 792,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "ВкусВилл: нижняя найденная цена за кг среди фасовок."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Местная / весовая",
+      "rynokOnline": 400,
+      "vkusvill": 840,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Рынок Онлайн: диапазон 400-750 руб/кг; в поле стоит минимум."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Молодой",
+      "rynokOnline": 85,
+      "vkusvill": 98,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Рынок Онлайн: найден диапазон 85-180 руб/кг; в поле стоит минимум."
+    },
+    {
+      "type": "Курица",
+      "variant": "Тушка",
+      "rynokOnline": 390,
+      "vkusvill": 290,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": ""
+    },
+    {
+      "type": "Огурец",
+      "variant": "Местный / обычный",
+      "rynokOnline": 150,
+      "vkusvill": 130,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "ВкусВилл: огурцы гладкие; Рынок Онлайн: огурец местный."
+    },
+    {
+      "type": "Черешня",
+      "variant": "Черешня",
+      "rynokOnline": 480,
+      "vkusvill": 698,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Рынок Онлайн: найден диапазон 480-1000 руб/кг; в поле стоит минимум."
+    },
+    {
+      "type": "Лук",
+      "variant": "Репчатый",
+      "rynokOnline": 85,
+      "vkusvill": 85,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": ""
+    },
+    {
+      "type": "Болгарский перец",
+      "variant": "Красный / болгарский",
+      "rynokOnline": 270,
+      "vkusvill": 375,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Рынок Онлайн: перец болгарский красный; ВкусВилл: красный сладкий."
+    },
+    {
+      "type": "Морковь",
+      "variant": "Морковь",
+      "rynokOnline": 80,
+      "vkusvill": 82,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": ""
+    },
+    {
+      "type": "Укроп",
+      "variant": "Укроп 50 г / фасовка",
+      "rynokOnline": 1200,
+      "vkusvill": 1640,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из цены за 50 г."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Грудинка",
+      "rynokOnline": 817,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": ""
+    },
+    {
+      "type": "Говядина",
+      "variant": "Мякоть",
+      "rynokOnline": 1350,
+      "vkusvill": 1986,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "ВкусВилл: мякоть бедра мраморной говядины."
+    }
+  ]
+}

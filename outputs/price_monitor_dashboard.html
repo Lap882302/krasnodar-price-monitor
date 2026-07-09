@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мониторинг цен: Краснодар</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #1f2933;
+      --muted: #64748b;
+      --line: #d9e2ec;
+      --green: #15803d;
+      --blue: #1d4ed8;
+      --amber: #a16207;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    main {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 48px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+    p { margin: 0 0 10px; }
+    .lead { color: var(--muted); font-size: 17px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .wide { grid-column: 1 / -1; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: var(--green);
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .note {
+      border-left: 4px solid var(--amber);
+      background: #fffbeb;
+      padding: 12px 14px;
+      border-radius: 6px;
+      color: #583f00;
+    }
+    ul, ol {
+      margin: 8px 0 0;
+      padding-left: 22px;
+    }
+    li { margin: 6px 0; }
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 650;
+    }
+    a:hover { text-decoration: underline; }
+    code {
+      background: #eef2f7;
+      border-radius: 5px;
+      padding: 2px 5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.92em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 700;
+      background: #f8fafc;
+    }
+    .path {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      word-break: break-word;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 8px 12px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .button.primary {
+      background: #166534;
+      border-color: #166534;
+      color: #ffffff;
+    }
+    @media (max-width: 720px) {
+      h1 { font-size: 25px; }
+      .grid { grid-template-columns: 1fr; }
+      main { width: min(100% - 24px, 1040px); padding-top: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="badge">Ежедневно в 09:00 МСК</span>
+    <h1>Мониторинг цен по Краснодару</h1>
+    <p class="lead">Сравнение Рынок Онлайн с ВкусВилл, Пятёрочкой, Азбукой Вкуса, Яндекс Лавкой и Самокатом. Все цены приводятся к руб/кг.</p>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Контрольный адрес</h2>
+        <p><strong>Краснодар, улица Красная, 156</strong></p>
+        <p class="lead">Один адрес нужен, чтобы сервисы показывали сопоставимые цены и наличие.</p>
+      </div>
+
+      <div class="card">
+        <h2>Где смотреть результат</h2>
+        <p>Каждый день после запуска файлы появятся в папке <code>outputs</code>.</p>
+        <p><code>price_monitor_YYYY-MM-DD.md</code> - удобно читать.</p>
+        <p><code>price_monitor_YYYY-MM-DD.csv</code> - удобно открыть в Excel/Google Sheets.</p>
+      </div>
+
+      <div class="card wide">
+        <h2>Что именно сравнивается</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Типы товаров</th>
+              <th>Источники</th>
+              <th>Итоговые колонки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Помидор, клубника, картофель, курица, огурец, черешня, лук, болгарский перец, морковь, укроп, говядина</td>
+              <td>Рынок Онлайн, ВкусВилл, Пятёрочка, Азбука Вкуса, Яндекс Лавка, Самокат</td>
+              <td>Дата, город, тип товара, сорт/позиция, цены по каждому сервису в руб/кг, комментарий</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Как пользоваться</h2>
+        <ol>
+          <li>Откройте свежий файл <code>price_monitor_YYYY-MM-DD.md</code> в папке <code>outputs</code>.</li>
+          <li>Если нужна таблица для работы, откройте <code>price_monitor_YYYY-MM-DD.csv</code>.</li>
+          <li>Если нужен запуск прямо сейчас, используйте файл с ручным промптом ниже.</li>
+        </ol>
+        <div class="actions">
+          <a class="button primary" href="./run_price_monitor_prompt.md">Промпт для ручного запуска</a>
+          <a class="button" href="./krasnodar_price_monitor_spec.md">Правила мониторинга</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Важное ограничение</h2>
+        <div class="note">
+          Некоторые сервисы могут требовать вход, подтверждение адреса или показывать разные остатки по разным зонам доставки. В таких случаях в таблице будет комментарий: что именно не удалось получить автоматически.
+        </div>
+      </div>
+
+      <div class="card wide">
+        <h2>Если результата нет</h2>
+        <p>Автоматизация стартует ежедневно в 09:00 по Москве. Если нужен отчёт раньше, откройте <a href="./run_price_monitor_prompt.md">ручной промпт</a> и отправьте его в Codex в этом же рабочем пространстве.</p>
+        <p class="path">Рабочая папка: /Users/liudmilapopova/Documents/Codex/2026-07-08/new-chat</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мониторинг цен Краснодар</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">Краснодар · ежедневный мониторинг</div>
+      <h1>Сравнение цен на продукты</h1>
+      <p>Рынок Онлайн против ВкусВилл, Пятёрочки, Азбуки Вкуса, Яндекс Лавки и Самоката. Все цены приведены к руб/кг.</p>
+    </div>
+    <div class="status-card">
+      <span>Контрольный адрес</span>
+      <strong id="address">Загрузка...</strong>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary-grid">
+      <article>
+        <span>Последнее обновление</span>
+        <strong id="generatedAt">Загрузка...</strong>
+      </article>
+      <article>
+        <span>Строк в таблице</span>
+        <strong id="rowsCount">0</strong>
+      </article>
+      <article class="wide">
+        <span>Покрытие источников</span>
+        <div id="sourceCoverage" class="source-coverage"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Таблица цен</h2>
+          <p>Выберите тип товара или найдите сорт по названию.</p>
+        </div>
+        <input id="search" type="search" placeholder="Поиск: клубника, черри, грудинка...">
+      </div>
+
+      <div id="typeFilters" class="filters"></div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Тип товара</th>
+              <th>Сорт / позиция</th>
+              <th>Рынок Онлайн</th>
+              <th>ВкусВилл</th>
+              <th>Пятёрочка</th>
+              <th>Азбука Вкуса</th>
+              <th>Яндекс Лавка</th>
+              <th>Самокат</th>
+              <th>Дешевле всего</th>
+              <th>Комментарий</th>
+            </tr>
+          </thead>
+          <tbody id="priceRows">
+            <tr><td colspan="10" class="empty-state">Загрузка данных...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="notes">
+      <article>
+        <h2>Как обновляется</h2>
+        <p>Сбор настроен ежедневно в 09:00 по Москве. Автоматизация должна обновлять файл <code>docs/data/latest.json</code> и отчёты в <code>outputs</code>.</p>
+      </article>
+      <article>
+        <h2>Что важно</h2>
+        <p>Сервисы доставки могут требовать подтверждение адреса или вход. Если источник не удалось собрать, это отображается в комментарии к строке.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
