@@ -46,6 +46,29 @@ function renderSummary(data) {
   document.querySelector("#sourceCoverage").innerHTML = filled;
 }
 
+function renderSourceStatus(data) {
+  const container = document.querySelector("#sourceStatus");
+  if (!container) return;
+
+  const statuses = data.sourceStatus || [];
+  if (!statuses.length) {
+    container.innerHTML = `<div class="empty-state">Статусы источников пока не заданы.</div>`;
+    return;
+  }
+
+  container.innerHTML = statuses.map(source => `
+    <article class="source-status-card ${source.status}">
+      <div class="source-status-top">
+        <h3>${source.name}</h3>
+        <span>${source.label}</span>
+      </div>
+      <p>${source.method}</p>
+      <strong>Следующий шаг</strong>
+      <p>${source.nextStep}</p>
+    </article>
+  `).join("");
+}
+
 function renderFilters(rows) {
   const types = ["Все", ...Array.from(new Set(rows.map(row => row.type))).sort((a, b) => a.localeCompare(b, "ru"))];
   document.querySelector("#typeFilters").innerHTML = types.map(type => {
@@ -76,7 +99,7 @@ function renderTable(rows) {
   const body = document.querySelector("#priceRows");
 
   if (!rows.length) {
-    body.innerHTML = `<tr><td colspan="11" class="empty-state">Ничего не найдено по текущему фильтру.</td></tr>`;
+    body.innerHTML = `<tr><td colspan="10" class="empty-state">Ничего не найдено по текущему фильтру.</td></tr>`;
     return;
   }
 
@@ -106,12 +129,13 @@ async function boot() {
     state.rows = data.rows;
     state.filteredRows = data.rows;
     renderSummary(data);
+    renderSourceStatus(data);
     renderFilters(data.rows);
     renderTable(data.rows);
   } catch (error) {
     document.querySelector("#priceRows").innerHTML = `
       <tr>
-        <td colspan="11" class="empty-state">
+        <td colspan="10" class="empty-state">
           Не удалось загрузить данные. Если страница открыта как файл, запустите её через GitHub Pages или локальный сервер.
         </td>
       </tr>

@@ -8,6 +8,11 @@
   --green: #16803c;
   --green-soft: #e5f6eb;
   --blue: #175cd3;
+  --blue-soft: #eaf1ff;
+  --amber: #9a5b00;
+  --amber-soft: #fff4dc;
+  --red: #b42318;
+  --red-soft: #fff0ed;
   --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
 }
 
@@ -139,8 +144,85 @@ main {
   font-size: 13px;
 }
 
+.source-status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 18px;
+}
+
+.source-status-card {
+  min-height: 190px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff;
+}
+
+.source-status-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.source-status-card h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.source-status-card p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.source-status-card strong {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.source-status-top span {
+  flex: 0 0 auto;
+  max-width: 145px;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.source-status-card.connected .source-status-top span {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.source-status-card.candidate .source-status-top span {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+.source-status-card.needs_check .source-status-top span {
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+.source-status-card.blocked .source-status-top span {
+  background: var(--red-soft);
+  color: var(--red);
+}
+
 .panel {
   overflow: hidden;
+}
+
+.connection-panel {
+  margin-bottom: 16px;
 }
 
 .panel-head {
@@ -285,7 +367,17 @@ code {
     grid-template-columns: 1fr;
   }
 
+  .source-status-grid {
+    grid-template-columns: 1fr;
+  }
+
   .panel-head {
     align-items: stretch;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1080px) {
+  .source-status-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
