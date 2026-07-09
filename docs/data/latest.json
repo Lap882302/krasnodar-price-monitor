@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T12:00:00+03:00",
+  "generatedAt": "2026-07-09T12:45:00+03:00",
   "city": "Краснодар",
   "address": "Краснодар, улица Красная, 156",
   "currency": "RUB",
@@ -48,10 +48,10 @@
     {
       "key": "yandexLavka",
       "name": "Яндекс Лавка",
-      "status": "candidate",
-      "label": "подготовлен probe",
-      "method": "Добавлен SSR probe: страница отдаёт CSRF-токены, authProxy-токен, depotId и адрес депо. Живой браузер при открытии Лавки показал капчу.",
-      "nextStep": "Один раз пройти капчу и выставить Красная 156 в браузере, затем передать cookie в скрипт `scripts/lavka_ssr_probe.mjs` для адресной сессии."
+      "status": "connected",
+      "label": "подключено частично",
+      "method": "После ручного прохождения капчи и выбора адреса Красная 156 собраны первые видимые карточки поиска Яндекс Лавки.",
+      "nextStep": "Довести коннектор до полного сбора: прокрутка/пагинация или прямой JSON API, затем ежедневный запуск без ручного шага, если сессия сохранена."
     },
     {
       "key": "samokat",
@@ -777,6 +777,270 @@
       "yandexLavka": null,
       "samokat": null,
       "comment": "Пересчитано из фасовки 550 г."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры розовые Азербайджан 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 208,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 104 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры Пинк Парадайз Узбекистан 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 222,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 111 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры сливовидные 450 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 262,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 118 ₽ за 450 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры 600 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 197,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 118 ₽ за 600 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры тепличные Россия 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 208,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 104 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры на ветке Россия 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 236,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 118 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры Мохито 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 236,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 118 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Черри 250 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 416,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 104 ₽ за 250 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника Из Лавки 400 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 382,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 153 ₽ за 400 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель белый ранний 1 кг",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 90,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 90 ₽ за 1000 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель 3 кг",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 63,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 188 ₽ за 3000 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель, Россия 1 кг",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 69,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 69 ₽ за 1000 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Курица",
+      "variant": "Стейк из нежного филе грудки Мираторг 450 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 527,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 237 ₽ за 450 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурцы короткоплодные 450 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 169,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 76 ₽ за 450 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурцы хрустящие 300 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 207,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 62 ₽ за 300 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук репчатый 1 кг",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 62,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 62 ₽ за 1000 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук репчатый 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 82,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 41 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Лук",
+      "variant": "Репчатый лук Узбекистан 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 110,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 55 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук красный 500 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 176,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 88 ₽ за 500 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук репчатый Из Лавки 400 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 225,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 90 ₽ за 400 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Лук",
+      "variant": "Зелёный лук 100 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 730,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 73 ₽ за 100 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Лук",
+      "variant": "Зелёный лук 50 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 820,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 41 ₽ за 50 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Стейк Денвер Matured Beef Мираторг 310 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 2074,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 643 ₽ за 310 г; пересчитано в руб/кг."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Шницель из говядины Мираторг 430 г",
+      "rynokOnline": null,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": 1398,
+      "samokat": null,
+      "comment": "Яндекс Лавка, Красная 156: 601 ₽ за 430 г; пересчитано в руб/кг."
     }
   ]
 }
