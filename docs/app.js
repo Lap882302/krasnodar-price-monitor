@@ -7,12 +7,23 @@ const sourceColumns = [
   ["samokat", "Самокат"]
 ];
 
+const dataVersion = "2026-07-09T12-45-lavka";
+const minimumGeneratedAt = "2026-07-09T12:45:00+03:00";
+const dataUrls = [
+  `./data/latest.json?v=${dataVersion}`,
+  `https://raw.githubusercontent.com/Lap882302/krasnodar-price-monitor/main/docs/data/latest.json?v=${dataVersion}`
+];
+
 const state = {
   rows: [],
   filteredRows: [],
   activeType: "Все",
   search: ""
 };
+
+function isFreshEnough(data) {
+  return data?.generatedAt && new Date(data.generatedAt) >= new Date(minimumGeneratedAt);
+}
 
 function formatPrice(value) {
   if (value === null || value === undefined || value === "") return "—";
@@ -123,9 +134,24 @@ function renderTable(rows) {
 
 async function boot() {
   try {
-    const response = await fetch("./data/latest.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    let data = null;
+    let lastError = null;
+
+    for (const url of dataUrls) {
+      try {
+        const response = await fetch(url, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const candidate = await response.json();
+        if (!isFreshEnough(candidate)) throw new Error("Stale data");
+        data = candidate;
+        break;
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    if (!data) throw lastError || new Error("No data");
+
     state.rows = data.rows;
     state.filteredRows = data.rows;
     renderSummary(data);
