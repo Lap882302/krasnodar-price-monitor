@@ -7,11 +7,25 @@ const sourceColumns = [
   ["samokat", "Самокат"]
 ];
 
-const dataVersion = "2026-07-09T12-45-lavka";
+const dataVersion = "2026-07-09T13-15-grouped-types";
 const minimumGeneratedAt = "2026-07-09T12:45:00+03:00";
 const dataUrls = [
   `./data/latest.json?v=${dataVersion}`,
   `https://raw.githubusercontent.com/Lap882302/krasnodar-price-monitor/main/docs/data/latest.json?v=${dataVersion}`
+];
+
+const productTypeOrder = [
+  "Помидор",
+  "Клубника",
+  "Картофель",
+  "Курица",
+  "Огурец",
+  "Черешня",
+  "Лук",
+  "Болгарский перец",
+  "Морковь",
+  "Укроп",
+  "Говядина"
 ];
 
 const state = {
@@ -32,6 +46,28 @@ function formatPrice(value) {
 
 function priceClass(value) {
   return value === null || value === undefined || value === "" ? "empty" : "";
+}
+
+function typeRank(type) {
+  const rank = productTypeOrder.indexOf(type);
+  return rank === -1 ? productTypeOrder.length : rank;
+}
+
+function sourceRank(row) {
+  const rank = sourceColumns.findIndex(([key]) => typeof row[key] === "number");
+  return rank === -1 ? sourceColumns.length : rank;
+}
+
+function sortRows(rows) {
+  return [...rows].sort((a, b) => {
+    const byType = typeRank(a.type) - typeRank(b.type);
+    if (byType !== 0) return byType;
+
+    const bySource = sourceRank(a) - sourceRank(b);
+    if (bySource !== 0) return bySource;
+
+    return a.variant.localeCompare(b.variant, "ru");
+  });
 }
 
 function minSource(row) {
@@ -81,7 +117,13 @@ function renderSourceStatus(data) {
 }
 
 function renderFilters(rows) {
-  const types = ["Все", ...Array.from(new Set(rows.map(row => row.type))).sort((a, b) => a.localeCompare(b, "ru"))];
+  const types = [
+    "Все",
+    ...Array.from(new Set(rows.map(row => row.type))).sort((a, b) => {
+      const byType = typeRank(a) - typeRank(b);
+      return byType !== 0 ? byType : a.localeCompare(b, "ru");
+    })
+  ];
   document.querySelector("#typeFilters").innerHTML = types.map(type => {
     const active = type === state.activeType ? "active" : "";
     return `<button class="filter-chip ${active}" data-type="${type}">${type}</button>`;
@@ -97,11 +139,11 @@ function renderFilters(rows) {
 
 function applyFilters() {
   const q = state.search.trim().toLowerCase();
-  state.filteredRows = state.rows.filter(row => {
+  state.filteredRows = sortRows(state.rows.filter(row => {
     const byType = state.activeType === "Все" || row.type === state.activeType;
     const bySearch = !q || `${row.type} ${row.variant} ${row.comment}`.toLowerCase().includes(q);
     return byType && bySearch;
-  });
+  }));
   renderFilters(state.rows);
   renderTable(state.filteredRows);
 }
@@ -152,8 +194,8 @@ async function boot() {
 
     if (!data) throw lastError || new Error("No data");
 
-    state.rows = data.rows;
-    state.filteredRows = data.rows;
+    state.rows = sortRows(data.rows);
+    state.filteredRows = state.rows;
     renderSummary(data);
     renderSourceStatus(data);
     renderFilters(data.rows);
