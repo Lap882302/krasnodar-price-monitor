@@ -7,11 +7,11 @@ const sourceColumns = [
   ["samokat", "Самокат"]
 ];
 
-const dataVersion = "2026-07-09T13-15-grouped-types";
+const dataVersion = "2026-07-09T13-30-raw-first";
 const minimumGeneratedAt = "2026-07-09T12:45:00+03:00";
 const dataUrls = [
-  `./data/latest.json?v=${dataVersion}`,
-  `https://raw.githubusercontent.com/Lap882302/krasnodar-price-monitor/main/docs/data/latest.json?v=${dataVersion}`
+  `https://raw.githubusercontent.com/Lap882302/krasnodar-price-monitor/main/docs/data/latest.json?v=${dataVersion}`,
+  `./data/latest.json?v=${dataVersion}`
 ];
 
 const productTypeOrder = [
