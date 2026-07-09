@@ -49,9 +49,9 @@
       "key": "yandexLavka",
       "name": "Яндекс Лавка",
       "status": "candidate",
-      "label": "есть путь подключения",
-      "method": "Страница отдаёт SSR-данные, CSRF-токены и API-домены grocery-authproxy/grocery-anonym-proxy.",
-      "nextStep": "Через браузер выставить Красная 156, затем читать JSON каталога по найденным API-запросам."
+      "label": "подготовлен probe",
+      "method": "Добавлен SSR probe: страница отдаёт CSRF-токены, authProxy-токен, depotId и адрес депо. Живой браузер при открытии Лавки показал капчу.",
+      "nextStep": "Один раз пройти капчу и выставить Красная 156 в браузере, затем передать cookie в скрипт `scripts/lavka_ssr_probe.mjs` для адресной сессии."
     },
     {
       "key": "samokat",
