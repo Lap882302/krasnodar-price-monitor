@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T00:00:00+03:00",
+  "generatedAt": "2026-07-09T12:00:00+03:00",
   "city": "Краснодар",
   "address": "Краснодар, улица Красная, 156",
   "currency": "RUB",
@@ -15,80 +15,421 @@
   "rows": [
     {
       "type": "Помидор",
-      "variant": "Красный / обычный",
+      "variant": "Помидор красный",
       "rynokOnline": 200,
       "vkusvill": null,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "Демо-данные из первичного ручного сбора; конкуренты кроме ВкусВилла ещё не собраны автоматикой."
+      "comment": "Позиция Рынок Онлайн."
     },
     {
       "type": "Помидор",
-      "variant": "Розовый Дагестан",
+      "variant": "Томаты розовые",
+      "rynokOnline": null,
+      "vkusvill": 295,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидор розовый Армавир",
+      "rynokOnline": 230,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидор розовый Дагестан",
       "rynokOnline": 200,
       "vkusvill": 375,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": ""
+      "comment": "Сопоставлено по сорту Дагестан."
     },
     {
       "type": "Помидор",
-      "variant": "Черри",
-      "rynokOnline": 650,
+      "variant": "Помидор домашний",
+      "rynokOnline": 350,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Томаты Махитос",
+      "rynokOnline": null,
+      "vkusvill": 420,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры, Азербайджан",
+      "rynokOnline": 450,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Томаты сливка красные Фламенко",
+      "rynokOnline": null,
+      "vkusvill": 366,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидор Черри местный",
+      "rynokOnline": 500,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Томаты черри красные на ветке",
+      "rynokOnline": null,
       "vkusvill": 792,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "ВкусВилл: нижняя найденная цена за кг среди фасовок."
+      "comment": "Пересчитано из фасовки 250 г."
+    },
+    {
+      "type": "Помидор",
+      "variant": "Помидоры черри",
+      "rynokOnline": 650,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
     },
     {
       "type": "Клубника",
-      "variant": "Местная / весовая",
+      "variant": "Клубника местная",
+      "rynokOnline": 600,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника местная, вариант 2",
+      "rynokOnline": 750,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Отдельная позиция Рынок Онлайн с тем же названием и другой ценой."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника Клери",
+      "rynokOnline": 500,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника местная мелкая",
       "rynokOnline": 400,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника фермерская",
+      "rynokOnline": null,
+      "vkusvill": 1900,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 250 г."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника Кисловодская",
+      "rynokOnline": null,
+      "vkusvill": 1750,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 200 г."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника Владимирская",
+      "rynokOnline": null,
+      "vkusvill": 1367,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 450 г."
+    },
+    {
+      "type": "Клубника",
+      "variant": "Клубника весовая",
+      "rynokOnline": null,
       "vkusvill": 840,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "Рынок Онлайн: диапазон 400-750 руб/кг; в поле стоит минимум."
+      "comment": "Позиция ВкусВилл."
     },
     {
       "type": "Картофель",
-      "variant": "Молодой",
+      "variant": "Картофель молодой",
       "rynokOnline": 85,
       "vkusvill": 98,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "Рынок Онлайн: найден диапазон 85-180 руб/кг; в поле стоит минимум."
+      "comment": "Сопоставлено по названию."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель молодой Азербайджан",
+      "rynokOnline": null,
+      "vkusvill": 135,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель Астрахань",
+      "rynokOnline": null,
+      "vkusvill": 118,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель молодой Коломбо / Колумбо",
+      "rynokOnline": 100,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель молодой Боровичок",
+      "rynokOnline": 140,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Королева Анна новый урожай",
+      "rynokOnline": 120,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Картофель",
+      "variant": "Картофель бэби",
+      "rynokOnline": null,
+      "vkusvill": 150,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
     },
     {
       "type": "Курица",
-      "variant": "Тушка",
-      "rynokOnline": 390,
+      "variant": "Тушка цыпленка-бройлера",
+      "rynokOnline": null,
       "vkusvill": 290,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": ""
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Курица",
+      "variant": "Курица бульонная Минорка",
+      "rynokOnline": 390,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Курица",
+      "variant": "Бедро цыпленка-бройлера бескостное",
+      "rynokOnline": null,
+      "vkusvill": 622,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Курица",
+      "variant": "Бедро цыпленка-бройлера",
+      "rynokOnline": null,
+      "vkusvill": 372,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Курица",
+      "variant": "Филе грудки цыпленка-бройлера",
+      "rynokOnline": null,
+      "vkusvill": 594,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
     },
     {
       "type": "Огурец",
-      "variant": "Местный / обычный",
+      "variant": "Огурец Местный",
       "rynokOnline": 150,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурец Мамлюк домашний",
+      "rynokOnline": 280,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурцы Эстафета",
+      "rynokOnline": 350,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурцы Герман",
+      "rynokOnline": 350,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурцы короткоплодные",
+      "rynokOnline": null,
+      "vkusvill": 240,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурцы грунтовые",
+      "rynokOnline": null,
+      "vkusvill": 155,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Огурец",
+      "variant": "Огурцы гладкие",
+      "rynokOnline": null,
       "vkusvill": 130,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "ВкусВилл: огурцы гладкие; Рынок Онлайн: огурец местный."
+      "comment": "Позиция ВкусВилл."
     },
     {
       "type": "Черешня",
@@ -99,29 +440,150 @@
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "Рынок Онлайн: найден диапазон 480-1000 руб/кг; в поле стоит минимум."
+      "comment": "Базовая позиция без уточнения сорта."
+    },
+    {
+      "type": "Черешня",
+      "variant": "Черешня Краснодар",
+      "rynokOnline": null,
+      "vkusvill": 760,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Черешня",
+      "variant": "Черешня Валерий Чкалов",
+      "rynokOnline": null,
+      "vkusvill": 1520,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 500 г."
+    },
+    {
+      "type": "Черешня",
+      "variant": "Черешня Ферганская",
+      "rynokOnline": null,
+      "vkusvill": 1390,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 500 г."
     },
     {
       "type": "Лук",
-      "variant": "Репчатый",
+      "variant": "Лук репчатый",
       "rynokOnline": 85,
       "vkusvill": 85,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": ""
+      "comment": "Сопоставлено по названию."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук репчатый молодой",
+      "rynokOnline": 90,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук белый",
+      "rynokOnline": 200,
+      "vkusvill": 270,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "ВкусВилл пересчитан из фасовки 500 г."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук красный",
+      "rynokOnline": 200,
+      "vkusvill": 290,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "ВкусВилл пересчитан из фасовки 500 г."
+    },
+    {
+      "type": "Лук",
+      "variant": "Лук плоский Ялтинский / Ялтинский",
+      "rynokOnline": 220,
+      "vkusvill": 280,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Сопоставлено по Ялтинскому луку."
     },
     {
       "type": "Болгарский перец",
-      "variant": "Красный / болгарский",
+      "variant": "Перец болгарский",
+      "rynokOnline": 400,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Болгарский перец",
+      "variant": "Перец Болгарский красный",
       "rynokOnline": 270,
       "vkusvill": 375,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "Рынок Онлайн: перец болгарский красный; ВкусВилл: красный сладкий."
+      "comment": "ВкусВилл: перец красный сладкий."
+    },
+    {
+      "type": "Болгарский перец",
+      "variant": "Перец Болгарский местный",
+      "rynokOnline": 350,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Болгарский перец",
+      "variant": "Перец Ласточка",
+      "rynokOnline": null,
+      "vkusvill": 270,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Болгарский перец",
+      "variant": "Перец Рамиро",
+      "rynokOnline": null,
+      "vkusvill": 1583,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 180 г."
     },
     {
       "type": "Морковь",
@@ -132,40 +594,139 @@
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": ""
+      "comment": "Сопоставлено по названию."
+    },
+    {
+      "type": "Морковь",
+      "variant": "Морковь мытая",
+      "rynokOnline": null,
+      "vkusvill": 125,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Морковь",
+      "variant": "Морковь молодая",
+      "rynokOnline": 145,
+      "vkusvill": 280,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "ВкусВилл пересчитан из фасовки 500 г."
     },
     {
       "type": "Укроп",
-      "variant": "Укроп 50 г / фасовка",
+      "variant": "Укроп весовой",
+      "rynokOnline": 500,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Укроп",
+      "variant": "Укроп 50 г",
       "rynokOnline": 1200,
       "vkusvill": 1640,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "Пересчитано из цены за 50 г."
+      "comment": "Обе цены пересчитаны из фасовки 50 г."
     },
     {
       "type": "Говядина",
-      "variant": "Грудинка",
+      "variant": "Говядина грудинка",
+      "rynokOnline": 920,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Говядина грудинка, вариант 2",
       "rynokOnline": 817,
       "vkusvill": null,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": ""
+      "comment": "Отдельная позиция Рынок Онлайн с другой ценой."
     },
     {
       "type": "Говядина",
-      "variant": "Мякоть",
+      "variant": "Говядина мякоть",
       "rynokOnline": 1350,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Мякоть бедра мраморной говядины",
+      "rynokOnline": null,
       "vkusvill": 1986,
       "pyaterochka": null,
       "azbukaVkusa": null,
       "yandexLavka": null,
       "samokat": null,
-      "comment": "ВкусВилл: мякоть бедра мраморной говядины."
+      "comment": "Позиция ВкусВилл."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Рёбра говядины",
+      "rynokOnline": 915,
+      "vkusvill": null,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Позиция Рынок Онлайн."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Говядина филей",
+      "rynokOnline": null,
+      "vkusvill": 1475,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 550 г."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Говядина для тушения",
+      "rynokOnline": null,
+      "vkusvill": 1185,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 400 г."
+    },
+    {
+      "type": "Говядина",
+      "variant": "Говядина лопатка Премиум",
+      "rynokOnline": null,
+      "vkusvill": 1496,
+      "pyaterochka": null,
+      "azbukaVkusa": null,
+      "yandexLavka": null,
+      "samokat": null,
+      "comment": "Пересчитано из фасовки 550 г."
     }
   ]
 }
